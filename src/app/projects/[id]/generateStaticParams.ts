@@ -1,9 +1,11 @@
+const basePath = '/luciegerova'
+
 const projects = [
   {
     id: 1,
     title: 'ARena',
     subtitle: 'Research Facility Manual',
-    image: '/projects/1.jpeg',
+    image: `${basePath}/projects/1.jpeg`,
     tags: ['Graphic Design', 'Publication Design'],
     bgColor: 'bg-project-blue',
     description: "A comprehensive guide for the ARena research facility, bridging physical space with digital technologies (AR/VR, projection, haptics). The manual clearly presents the principles of the entire system's operation while offering specific scenarios for practical applications.",
@@ -12,13 +14,13 @@ const projects = [
     duration: '3 months',
     deliverables: ['Publication Design', 'Visual Identity', 'Information Architecture', 'Print Production'],
     url: '#',
-    additionalImages: ['/projects/2.jpeg', '/projects/3.jpeg']
+    additionalImages: [`${basePath}/projects/2.jpeg`, `${basePath}/projects/3.jpeg`]
   },
   {
     id: 2,
     title: 'Pes pro Patricii',
     subtitle: 'Design Help Workshop Editorial',
-    image: '/projects/4.png',
+    image: `${basePath}/projects/4.png`,
     tags: ['Design Help', 'Editorial Design'],
     bgColor: 'bg-project-pink',
     description: "An editorial project created during a Design Help workshop, focusing on using design as a tool to address specific human needs. The project involved analyzing a defined persona's story and real-life constraints to create a visual solution that combines empathy, visual communication, and educational value.",
@@ -27,13 +29,13 @@ const projects = [
     duration: '2 months',
     deliverables: ['Editorial Design', 'Visual Research', 'Typography', 'Print Production'],
     url: '#',
-    additionalImages: ['/projects/5.png', '/projects/6.png', '/projects/7.png']
+    additionalImages: [`${basePath}/projects/5.png`, `${basePath}/projects/6.png`, `${basePath}/projects/7.png`]
   },
   {
     id: 3,
     title: 'Kampus Dejvice',
     subtitle: 'Wayfinding System for CTU Campus',
-    image: '/projects/7.jpg',
+    image: `${basePath}/projects/7.jpg`,
     tags: ['Environmental Graphic Design', 'Wayfinding'],
     bgColor: 'bg-project-orange',
     description: "A comprehensive wayfinding system designed for the Czech Technical University (CTU) campus in Dejvice, Prague. The project focuses on creating an intuitive navigation system that enhances the user experience while respecting the architectural heritage of the campus.",
@@ -42,22 +44,22 @@ const projects = [
     duration: '6 months',
     deliverables: ['Wayfinding System', 'Visual Identity', 'Design Manual', 'Implementation Guidelines'],
     url: '#',
-    additionalImages: ['/projects/8.jpg', '/projects/9.jpg', '/projects/10.jpg', '/projects/11.jpg']
+    additionalImages: [`${basePath}/projects/8.jpg`, `${basePath}/projects/9.jpg`, `${basePath}/projects/10.jpg`, `${basePath}/projects/11.jpg`]
   },
   {
     id: 4,
     title: 'Puro',
     subtitle: 'Sustainable Water App',
-    image: '/projects/12.png',
+    image: `${basePath}/projects/12.png`,
     tags: ['UX/UI Design', 'Mobile App'],
     bgColor: 'bg-project-blue',
     description: "Puro is an eco-focused mobile app that maps publicly available drinking water sources – drinking fountains, water fountains, and businesses offering free water. The goal is to promote a sustainable lifestyle, reduce plastic consumption, and simplify access to drinking water in the city. The app includes a clear interactive map, user profile with challenges, and an educational section. The project combines functional design with education and community outreach.",
-    czechDescription: "Puro je ekologicky zaměřená mobilní aplikace, která mapuje veřejně dostupné zdroje pitné vody – pítka, fontány a podniky nabízející vodu zdarma. Cílem je podpořit udržitelný životní styl, snížit spotřebu plastů a zjednodušit přístup k pitné vodě ve městě. Součástí aplikace je přehledná interaktivní mapa, uživatelský profil s výzvami i edukační sekce. Projekt kombinuje funkční design s edukací a komunitním přesahem.",
+    czechDescription: "Puro je ekologicky zaměřená mobilní aplikace, která mapuje veřejně dostupné zdroje pitné vody – pítka, fontány a podniky nabízejícící vodu zdarma. Cílem je podpořit udržitelný životní styl, snížit spotřebu plastů a zjednodušit přístup k pitné vodě ve městě. Součástí aplikace je přehledná interaktivní mapa, uživatelský profil s výzvami i edukační sekce. Projekt kombinuje funkční design s edukací a komunitním přesahem.",
     role: 'UX/UI Designer',
     duration: '4 months',
     deliverables: ['Mobile App Design', 'User Research', 'Interactive Prototype', 'Design System'],
     url: '#',
-    additionalImages: ['/projects/13.png']
+    additionalImages: [`${basePath}/projects/13.png`]
   }
 ]
 

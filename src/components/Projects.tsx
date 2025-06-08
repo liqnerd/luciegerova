@@ -117,6 +117,7 @@ export default function Projects() {
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    priority={index < 2}
                   />
                 </div>
                 <h3 className="text-xl sm:text-2xl 2xl:text-3xl font-bold mb-2 sm:mb-4">{project.title}</h3>

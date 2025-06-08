@@ -4,15 +4,11 @@ const nextConfig = {
   basePath: '/luciegerova',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'liqnerd.github.io',
-        pathname: '/luciegerova/**',
-      },
-    ],
+    loader: 'default',
+    path: '/luciegerova',
   },
   assetPrefix: '/luciegerova',
+  trailingSlash: true,
 }
 
 export default nextConfig 

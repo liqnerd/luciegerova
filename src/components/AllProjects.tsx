@@ -65,6 +65,7 @@ export default function AllProjects() {
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  priority={index < 2}
                 />
               </div>
             ) : (
