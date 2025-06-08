@@ -8,7 +8,7 @@ const allProjects = [
   {
     id: 1,
     title: 'ARena',
-    image: '/projects/1.jpeg',
+    image: 'https://liqnerd.github.io/luciegerova/projects/1.jpeg',
     tags: ['Graphic Design', 'Publication Design'],
     bgColor: 'bg-project-blue',
     featured: true,
@@ -17,7 +17,7 @@ const allProjects = [
   {
     id: 2,
     title: 'Pes pro Patricii',
-    image: '/projects/4.png',
+    image: 'https://liqnerd.github.io/luciegerova/projects/4.png',
     tags: ['Design Help', 'Editorial Design'],
     bgColor: 'bg-project-pink',
     featured: true,
@@ -26,7 +26,7 @@ const allProjects = [
   {
     id: 3,
     title: 'Kampus Dejvice',
-    image: '/projects/7.jpg',
+    image: 'https://liqnerd.github.io/luciegerova/projects/7.jpg',
     tags: ['Environmental Graphic Design', 'Wayfinding'],
     bgColor: 'bg-project-orange',
     featured: true,
@@ -35,7 +35,7 @@ const allProjects = [
   {
     id: 4,
     title: 'Puro',
-    image: '/projects/12.png',
+    image: 'https://liqnerd.github.io/luciegerova/projects/12.png',
     tags: ['UX/UI Design', 'Mobile App'],
     bgColor: 'bg-project-green',
     description: "Puro is an eco-focused mobile app that maps publicly available drinking water sources.",

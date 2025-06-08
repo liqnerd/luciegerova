@@ -21,7 +21,7 @@ export const projects: Project[] = [
     id: 1,
     title: 'ARena',
     subtitle: 'Research Facility Manual',
-    image: '/projects/1.jpeg',
+    image: 'https://liqnerd.github.io/luciegerova/projects/1.jpeg',
     tags: ['Graphic Design', 'Publication Design'],
     bgColor: 'bg-project-blue',
     description: "A comprehensive guide for the ARena research facility, bridging physical space with digital technologies (AR/VR, projection, haptics). The manual clearly presents the principles of the entire system's operation while offering specific scenarios for practical applications.",
@@ -30,13 +30,13 @@ export const projects: Project[] = [
     duration: '3 months',
     deliverables: ['Publication Design', 'Visual Identity', 'Information Architecture', 'Print Production'],
     url: '#',
-    additionalImages: ['/projects/2.jpeg', '/projects/3.jpeg']
+    additionalImages: ['https://liqnerd.github.io/luciegerova/projects/2.jpeg', 'https://liqnerd.github.io/luciegerova/projects/3.jpeg']
   },
   {
     id: 2,
     title: 'Pes pro Patricii',
     subtitle: 'Design Help Workshop Editorial',
-    image: '/projects/4.png',
+    image: 'https://liqnerd.github.io/luciegerova/projects/4.png',
     tags: ['Design Help', 'Editorial Design'],
     bgColor: 'bg-project-pink',
     description: "An editorial project created during a Design Help workshop, focusing on using design as a tool to address specific human needs. The project involved analyzing a defined persona's story and real-life constraints to create a visual solution that combines empathy, visual communication, and educational value.",
@@ -45,13 +45,13 @@ export const projects: Project[] = [
     duration: '2 months',
     deliverables: ['Editorial Design', 'Visual Research', 'Typography', 'Print Production'],
     url: '#',
-    additionalImages: ['/projects/5.png', '/projects/6.png', '/projects/7.png']
+    additionalImages: ['https://liqnerd.github.io/luciegerova/projects/5.png', 'https://liqnerd.github.io/luciegerova/projects/6.png', 'https://liqnerd.github.io/luciegerova/projects/7.png']
   },
   {
     id: 3,
     title: 'Kampus Dejvice',
     subtitle: 'Wayfinding System for CTU Campus',
-    image: '/projects/7.jpg',
+    image: 'https://liqnerd.github.io/luciegerova/projects/7.jpg',
     tags: ['Environmental Graphic Design', 'Wayfinding'],
     bgColor: 'bg-project-orange',
     description: "A comprehensive wayfinding system designed for the Czech Technical University (CTU) campus in Dejvice, Prague. The project focuses on creating an intuitive navigation system that enhances the user experience while respecting the architectural heritage of the campus.",
@@ -60,13 +60,13 @@ export const projects: Project[] = [
     duration: '6 months',
     deliverables: ['Wayfinding System', 'Visual Identity', 'Design Manual', 'Implementation Guidelines'],
     url: '#',
-    additionalImages: ['/projects/8.jpg', '/projects/9.jpg', '/projects/10.jpg', '/projects/11.jpg']
+    additionalImages: ['https://liqnerd.github.io/luciegerova/projects/8.jpg', 'https://liqnerd.github.io/luciegerova/projects/9.jpg', 'https://liqnerd.github.io/luciegerova/projects/10.jpg', 'https://liqnerd.github.io/luciegerova/projects/11.jpg']
   },
   {
     id: 4,
     title: 'Puro',
     subtitle: 'Sustainable Water App',
-    image: '/projects/12.png',
+    image: 'https://liqnerd.github.io/luciegerova/projects/12.png',
     tags: ['UX/UI Design', 'Mobile App'],
     bgColor: 'bg-project-blue',
     description: "Puro is an eco-focused mobile app that maps publicly available drinking water sources – drinking fountains, water fountains, and businesses offering free water. The goal is to promote a sustainable lifestyle, reduce plastic consumption, and simplify access to drinking water in the city. The app includes a clear interactive map, user profile with challenges, and an educational section. The project combines functional design with education and community outreach.",
@@ -75,6 +75,6 @@ export const projects: Project[] = [
     duration: '4 months',
     deliverables: ['Mobile App Design', 'User Research', 'Interactive Prototype', 'Design System'],
     url: '#',
-    additionalImages: ['/projects/13.png']
+    additionalImages: ['https://liqnerd.github.io/luciegerova/projects/13.png']
   }
 ] 
