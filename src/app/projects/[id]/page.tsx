@@ -71,6 +71,12 @@ const projects = [
   }
 ]
 
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id.toString(),
+  }))
+}
+
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   const project = projects.find(p => p.id === parseInt(params.id))
