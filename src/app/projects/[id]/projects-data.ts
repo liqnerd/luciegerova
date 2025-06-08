@@ -68,7 +68,7 @@ export const projects: Project[] = [
     subtitle: 'Sustainable Water App',
     image: 'https://liqnerd.github.io/luciegerova/projects/12.png',
     tags: ['UX/UI Design', 'Mobile App'],
-    bgColor: 'bg-project-blue',
+    bgColor: 'bg-project-green',
     description: "Puro is an eco-focused mobile app that maps publicly available drinking water sources – drinking fountains, water fountains, and businesses offering free water. The goal is to promote a sustainable lifestyle, reduce plastic consumption, and simplify access to drinking water in the city. The app includes a clear interactive map, user profile with challenges, and an educational section. The project combines functional design with education and community outreach.",
     czechDescription: "Puro je ekologicky zaměřená mobilní aplikace, která mapuje veřejně dostupné zdroje pitné vody – pítka, fontány a podniky nabízející vodu zdarma. Cílem je podpořit udržitelný životní styl, snížit spotřebu plastů a zjednodušit přístup k pitné vodě ve městě. Součástí aplikace je přehledná interaktivní mapa, uživatelský profil s výzvami i edukační sekce. Projekt kombinuje funkční design s edukací a komunitním přesahem.",
     role: 'UX/UI Designer',

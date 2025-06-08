@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/luciegerova',
+  basePath: '',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -11,7 +11,7 @@ const nextConfig = {
       },
     ],
   },
-  assetPrefix: 'https://liqnerd.github.io/luciegerova',
+  assetPrefix: '',
   trailingSlash: true,
 }
 

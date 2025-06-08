@@ -127,7 +127,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                         key={index} 
                         className={`relative rounded-xl sm:rounded-2xl overflow-hidden ${
                           project.id === 4 
-                            ? 'aspect-auto h-auto w-full max-w-[1200px] mx-auto' 
+                            ? 'w-full max-w-[800px] mx-auto mb-16' 
                             : 'aspect-[3/2] cursor-pointer'
                         }`}
                         onClick={() => project.id !== 4 && setSelectedImage(image)}
@@ -139,9 +139,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                         <Image
                           src={image}
                           alt={`${project.title} - Additional Image ${index + 1}`}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw"
+                          width={800}
+                          height={800}
+                          className={project.id === 4 ? 'w-full h-auto' : 'object-cover aspect-[3/2]'}
+                          sizes={project.id === 4 ? '(max-width: 800px) 100vw, 800px' : '(max-width: 768px) 100vw, (max-width: 1200px) 45vw'}
                         />
                       </motion.div>
                     ))}
