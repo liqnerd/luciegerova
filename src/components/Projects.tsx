@@ -4,12 +4,28 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Import images statically
+import arena from '../../public/projects/1.jpeg'
+import arena2 from '../../public/projects/2.jpeg'
+import arena3 from '../../public/projects/3.jpeg'
+import patricia from '../../public/projects/4.png'
+import patricia2 from '../../public/projects/5.png'
+import patricia3 from '../../public/projects/6.png'
+import patricia4 from '../../public/projects/7.png'
+import kampus from '../../public/projects/7.jpg'
+import kampus2 from '../../public/projects/8.jpg'
+import kampus3 from '../../public/projects/9.jpg'
+import kampus4 from '../../public/projects/10.jpg'
+import kampus5 from '../../public/projects/11.jpg'
+import puro from '../../public/projects/12.png'
+import puro2 from '../../public/projects/13.png'
+
 const projects = [
   {
     id: 1,
     title: 'ARena',
     subtitle: 'Research Facility Manual',
-    image: '/projects/1.jpeg',
+    image: arena,
     tags: ['Graphic Design', 'Publication Design'],
     bgColor: 'bg-project-blue',
     description: "A comprehensive guide for the ARena research facility, bridging physical space with digital technologies (AR/VR, projection, haptics). The manual clearly presents the principles of the entire system's operation while offering specific scenarios for practical applications.",
@@ -18,13 +34,13 @@ const projects = [
     duration: '3 months',
     deliverables: ['Publication Design', 'Visual Identity', 'Information Architecture', 'Print Production'],
     url: '#',
-    additionalImages: ['/projects/2.jpeg', '/projects/3.jpeg']
+    additionalImages: [arena2, arena3]
   },
   {
     id: 2,
     title: 'Pes pro Patricii',
     subtitle: 'Design Help Workshop Editorial',
-    image: '/projects/4.png',
+    image: patricia,
     tags: ['Design Help', 'Editorial Design'],
     bgColor: 'bg-project-pink',
     description: "An editorial project created during a Design Help workshop, focusing on using design as a tool to address specific human needs. The project involved analyzing a defined persona's story and real-life constraints to create a visual solution that combines empathy, visual communication, and educational value.",
@@ -33,13 +49,13 @@ const projects = [
     duration: '2 months',
     deliverables: ['Editorial Design', 'Visual Research', 'Typography', 'Print Production'],
     url: '#',
-    additionalImages: ['/projects/5.png', '/projects/6.png', '/projects/7.png']
+    additionalImages: [patricia2, patricia3, patricia4]
   },
   {
     id: 3,
     title: 'Kampus Dejvice',
     subtitle: 'Wayfinding System for CTU Campus',
-    image: '/projects/7.jpg',
+    image: kampus,
     tags: ['Environmental Graphic Design', 'Wayfinding'],
     bgColor: 'bg-project-orange',
     description: "A wayfinding system design for the CTU campus in Prague-Dejvice that addressed the need to replace the original non-functional signage while visually modernizing the entire campus environment. The project aimed to create an understandable and aesthetically contemporary system that would improve orientation for students, faculty staff, and visitors.",
@@ -48,13 +64,13 @@ const projects = [
     duration: '6 months',
     deliverables: ['Wayfinding System', 'Visual Identity', 'Design Manual', 'Implementation Guidelines'],
     url: '#',
-    additionalImages: ['/projects/8.jpg', '/projects/9.jpg', '/projects/10.jpg', '/projects/11.jpg']
+    additionalImages: [kampus2, kampus3, kampus4, kampus5]
   },
   {
     id: 4,
     title: 'Puro',
     subtitle: 'Sustainable Water App',
-    image: '/projects/12.png',
+    image: puro,
     tags: ['UX/UI Design', 'Mobile App'],
     bgColor: 'bg-project-green',
     description: "Puro is an eco-focused mobile app that maps publicly available drinking water sources – drinking fountains, water fountains, and businesses offering free water. The goal is to promote a sustainable lifestyle, reduce plastic consumption, and simplify access to drinking water in the city. The app includes a clear interactive map, user profile with challenges, and an educational section. The project combines functional design with education and community outreach.",
@@ -63,7 +79,7 @@ const projects = [
     duration: '4 months',
     deliverables: ['Mobile App Design', 'User Research', 'Interactive Prototype', 'Design System'],
     url: '#',
-    additionalImages: ['/projects/13.png']
+    additionalImages: [puro2]
   }
 ]
 
