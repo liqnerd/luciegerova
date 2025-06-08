@@ -2,10 +2,10 @@
 const nextConfig = {
   output: 'export',
   basePath: '/luciegerova',
+  assetPrefix: '/luciegerova/',
   images: {
     unoptimized: true,
   },
-  assetPrefix: 'https://liqnerd.github.io/luciegerova',
   trailingSlash: true,
   distDir: 'out',
   webpack: (config) => {
