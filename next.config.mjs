@@ -1,20 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/luciegerova',
-  assetPrefix: '/luciegerova/',
+  basePath: '',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'liqnerd.github.io',
+      },
+    ],
   },
+  assetPrefix: '',
   trailingSlash: true,
-  distDir: 'out',
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(png|jpe?g|gif|svg)$/i,
-      type: 'asset/resource',
-    });
-    return config;
-  },
 }
 
 export default nextConfig 
