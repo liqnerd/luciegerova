@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 import ImageModal from '@/components/ImageModal'
 import { motion } from 'framer-motion'
-import { projects } from './generateStaticParams'
+import { projects } from './projects-data'
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -140,8 +140,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                           src={image}
                           alt={`${project.title} - Additional Image ${index + 1}`}
                           fill
-                          className={`w-full h-full ${project.id !== 4 ? 'object-cover bg-[#F5F5F5]' : ''}`}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1400px) 90vw"
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw"
                         />
                       </motion.div>
                     ))}
