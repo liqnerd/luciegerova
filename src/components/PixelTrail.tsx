@@ -1,20 +1,40 @@
-'use client'
-
-import dynamic from 'next/dynamic'
-import { useMemo, useEffect, useState } from 'react'
+/* eslint-disable react/no-unknown-property */
+import { useMemo } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
 import { shaderMaterial, useTrailTexture } from '@react-three/drei'
 import * as THREE from 'three'
 
-import './PixelTrail.css';
+import './PixelTrail.css'
+
+interface GooeyFilterProps {
+  id?: string;
+  strength?: number;
+}
+
+interface PixelTrailProps {
+  gridSize?: number;
+  trailSize?: number;
+  maxAge?: number;
+  interpolate?: number;
+  easingFunction?: (x: number) => number;
+  canvasProps?: Record<string, any>;
+  glProps?: {
+    antialias?: boolean;
+    powerPreference?: 'high-performance' | 'low-power' | 'default';
+    alpha?: boolean;
+  };
+  gooeyFilter?: {
+    id: string;
+    strength: number;
+  };
+  color?: string;
+  className?: string;
+}
 
 const GooeyFilter = ({
   id = "goo-filter",
   strength = 10,
-}: {
-  id?: string;
-  strength?: number;
-}) => {
+}: GooeyFilterProps) => {
   return (
     <svg className='goo-filter-container'>
       <defs>
@@ -85,7 +105,7 @@ interface SceneProps {
   trailSize: number;
   maxAge: number;
   interpolate: number;
-  easingFunction?: (x: number) => number;
+  easingFunction: (x: number) => number;
   pixelColor: string;
 }
 
@@ -133,27 +153,7 @@ function Scene({
   )
 }
 
-interface PixelTrailProps {
-  gridSize?: number;
-  trailSize?: number;
-  maxAge?: number;
-  interpolate?: number;
-  easingFunction?: (x: number) => number;
-  canvasProps?: Record<string, any>;
-  glProps?: {
-    antialias?: boolean;
-    powerPreference?: 'high-performance' | 'low-power' | 'default';
-    alpha?: boolean;
-  };
-  gooeyFilter?: {
-    id: string;
-    strength: number;
-  };
-  color?: string;
-  className?: string;
-}
-
-function PixelTrailInner({
+export default function PixelTrail({
   gridSize = 40,
   trailSize = 0.1,
   maxAge = 250,
@@ -162,7 +162,7 @@ function PixelTrailInner({
   canvasProps = {},
   glProps = {
     antialias: false,
-    powerPreference: 'high-performance',
+    powerPreference: 'high-performance' as const,
     alpha: true
   },
   gooeyFilter,
@@ -191,8 +191,4 @@ function PixelTrailInner({
       </Canvas>
     </>
   )
-}
-
-export default dynamic(() => Promise.resolve(PixelTrailInner), {
-  ssr: false
-}) 
+} 
