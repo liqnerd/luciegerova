@@ -1,6 +1,10 @@
 'use client'
 
-import PixelTrail from './PixelTrail'
+import dynamic from 'next/dynamic'
+
+const PixelTrail = dynamic(() => import('./PixelTrail'), {
+  ssr: false,
+})
 
 export default function CursorTrail() {
   return (
