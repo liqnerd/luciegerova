@@ -2,7 +2,7 @@
 
 import './globals.css'
 import { Inter } from 'next/font/google'
-import PixelTrail from '@/components/PixelTrail'
+import ClientPixelTrail from '@/components/ClientPixelTrail'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,14 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <body className={`font-sans antialiased`}>
-        <PixelTrail
-          gridSize={50}
-          trailSize={0.1}
-          maxAge={250}
-          interpolate={5}
-          color="#000"
-          gooeyFilter={{ id: "cursor-goo-filter", strength: 2 }}
-        />
+        <ClientPixelTrail />
         {children}
       </body>
     </html>
