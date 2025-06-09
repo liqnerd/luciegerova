@@ -1,5 +1,7 @@
+'use client'
+
 /* eslint-disable react/no-unknown-property */
-import { useMemo } from 'react'
+import { useMemo, useEffect, useState } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
 import { shaderMaterial, useTrailTexture } from '@react-three/drei'
 import * as THREE from 'three'
@@ -140,7 +142,7 @@ interface PixelTrailProps {
   canvasProps?: Record<string, any>;
   glProps?: {
     antialias?: boolean;
-    powerPreference?: string;
+    powerPreference?: 'high-performance' | 'low-power' | 'default';
     alpha?: boolean;
   };
   gooeyFilter?: {
@@ -167,6 +169,16 @@ export default function PixelTrail({
   color = '#ffffff',
   className = ''
 }: PixelTrailProps) {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
+  }
+
   return (
     <>
       {gooeyFilter && (
