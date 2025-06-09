@@ -1,6 +1,6 @@
 'use client'
 
-/* eslint-disable react/no-unknown-property */
+import dynamic from 'next/dynamic'
 import { useMemo, useEffect, useState } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
 import { shaderMaterial, useTrailTexture } from '@react-three/drei'
@@ -153,7 +153,7 @@ interface PixelTrailProps {
   className?: string;
 }
 
-export default function PixelTrail({
+function PixelTrailInner({
   gridSize = 40,
   trailSize = 0.1,
   maxAge = 250,
@@ -169,16 +169,6 @@ export default function PixelTrail({
   color = '#ffffff',
   className = ''
 }: PixelTrailProps) {
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
-  if (!isMounted) {
-    return null
-  }
-
   return (
     <>
       {gooeyFilter && (
@@ -201,4 +191,8 @@ export default function PixelTrail({
       </Canvas>
     </>
   )
-} 
+}
+
+export default dynamic(() => Promise.resolve(PixelTrailInner), {
+  ssr: false
+}) 
